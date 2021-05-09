@@ -71,7 +71,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             Context context = getApplicationContext();
             //The context to use. Usually your Application or Activity object
-            CharSequence message = "Successfully click the ok button ";
+
             //Display string  int
             int duration = Toast.LENGTH_SHORT;
             //How long the toast message will lasts
