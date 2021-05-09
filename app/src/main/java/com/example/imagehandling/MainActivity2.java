@@ -64,14 +64,14 @@ public class MainActivity2 extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(this, Channel_ID).setSmallIcon(R.drawable.ic_launcher_background).setContentTitle("My notification").setContentText("Hello World!").setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(this, Channel_ID).setSmallIcon(R.drawable.ic_launcher_background).setContentTitle("MORE MEAL").setContentText("Welcome to the app").setPriority(NotificationCompat.PRIORITY_DEFAULT)
                     .setContentIntent(pendingIntent).setAutoCancel(true);
             NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
             notificationManager.notify(0, builder.build());
 
             Context context = getApplicationContext();
             //The context to use. Usually your Application or Activity object
-            CharSequence message = "You just clicked the OK button";
+            CharSequence message = "Successfully click the ok button ";
             //Display string  int
             int duration = Toast.LENGTH_SHORT;
             //How long the toast message will lasts
